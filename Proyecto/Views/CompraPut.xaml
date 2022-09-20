@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Views.CompraPut">
+
+
+    <Grid BackgroundColor="black" Padding="20">
+
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height=".50*"></RowDefinition>
+            <RowDefinition Height=".50*" ></RowDefinition>
+            <RowDefinition Height=".50*" ></RowDefinition>
+            <RowDefinition Height=".50*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height=".25*" ></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Image Source="compraPut.png" Grid.Row="0" HorizontalOptions="Center" />
+        <Label Text="" x:Name="resultado" Grid.Row="1" TextColor="#fff200"></Label>
+        <Entry Placeholder="Ingrese Id " Keyboard="Text" TextChanged="idForm_TextChanged"   x:Name="idForm"  Grid.Row="2" Grid.Column="0" Background="white"/>
+        <Entry Placeholder="Ingrese id Membresia " Keyboard="Numeric"   x:Name="idMembresiaForm"  Grid.Row="3" Grid.Column="0" Background="white"/>
+        <Entry Placeholder="Ingrese id Ticket " Keyboard="Numeric"   x:Name="idTicketForm"  Grid.Row="4" Grid.Column="0" Background="white"/>
+        <Entry Placeholder="Ingrese Fecha Compra " Keyboard="Text"   x:Name="fechaCompraForm"  Grid.Row="5" Grid.Column="0" Background="white"/>
+
+        <Button Text="Actualizar" Clicked="Button_Clicked"  Grid.Row="6" Grid.Column="0" CornerRadius="20" FontSize="30" Margin="7" BorderWidth="5" BorderColor="#fff200" Background="#0e2124" TextColor="#fff200"></Button>
+
+    </Grid>
+</ContentPage>

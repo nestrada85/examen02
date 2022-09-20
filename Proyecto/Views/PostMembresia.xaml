@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Views.PostMembresia">
+    
+    <Grid BackgroundColor="black" Padding="20">
+
+
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height=".50*"></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height=".25*" ></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <Image Source="membresiaPost.png" Grid.Row="0" HorizontalOptions="Center" />
+        <Label Text="" x:Name="resultado" Grid.Row="1" TextColor="#00ff00"></Label>
+        <Entry Placeholder="Ingrese Descripción " Keyboard="Text"   x:Name="descripcionForm"  Grid.Row="2" Grid.Column="0" Background="white"/>
+
+        <Button Text="Registrar" Clicked="Button_Clicked"  Grid.Row="5" Grid.Column="0" CornerRadius="20" FontSize="30" Margin="7" BorderWidth="5" BorderColor="#00ff00" Background="#0e2124" TextColor="#00ff00"></Button>
+
+    </Grid>
+</ContentPage>

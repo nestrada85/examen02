@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Views.ServiceEspecial">
+
+    <ScrollView Background="black">
+
+        <StackLayout Background="black">
+            <Grid Padding="15">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*" ></RowDefinition>
+                    <RowDefinition Height="Auto" ></RowDefinition>
+
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+
+
+
+                <Image Source="service.png" Grid.Row="0" Grid.ColumnSpan="4" HorizontalOptions="Center" />
+
+
+                <Label x:Name="resultado" Text="Espere un Momento"
+                           Grid.Row="1"
+                          Grid.Column="0"
+                           Grid.ColumnSpan="4"
+                           FontSize="14"
+                           TextColor="White"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand" />
+
+
+
+            </Grid>
+
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

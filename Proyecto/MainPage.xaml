@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.MainPage">
+
+    
+    
+    
+    <Grid BackgroundColor="Black" Padding="15">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height="*" ></RowDefinition>
+            <RowDefinition Height=".25*" ></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+
+        <Image Source="logo.png" Grid.Row="0" Grid.ColumnSpan="4" HorizontalOptions="Center" />
+        <Label />
+
+        <Button Text="Membresia" Margin="7" FontSize="20" CornerRadius="30" BorderColor="#00e5ff" Background="#0e2124" TextColor="#00e5ff" BorderWidth="5" Clicked="membresia"  Grid.Row="2" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2"></Button>
+        <Button Text="Persona" Margin="7" FontSize="20" CornerRadius="30" BorderColor="#00e5ff" Background="#0e2124" TextColor="#00e5ff" BorderWidth="5"  Clicked="persona" Grid.Row="2" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" />
+
+        <Button Text="Tipo Evento" Margin="7" FontSize="20" CornerRadius="30" BorderColor="#00e5ff" Background="#0e2124" TextColor="#00e5ff" BorderWidth="5" Clicked="tipoEvento"  Grid.Row="4" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2"></Button>
+        <Button Text="Evento" Margin="7" FontSize="20" CornerRadius="30" BorderColor="#00e5ff" Background="#0e2124" TextColor="#00e5ff" BorderWidth="5" Clicked="evento" Grid.Row="4" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" />
+
+        <Button Text="Ticket" Margin="7" FontSize="20" CornerRadius="30" BorderColor="#00e5ff" Background="#0e2124" TextColor="#00e5ff" BorderWidth="5" Clicked="ticket"  Grid.Row="6" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2"></Button>
+        <Button Text="Compra" Margin="7" FontSize="20" CornerRadius="30" BorderColor="#00e5ff" Background="#0e2124" TextColor="#00e5ff" BorderWidth="5" Clicked="compra" Grid.Row="6" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" />
+
+        <Button Text="SERVICE ESPECIAL" Clicked="serviceEspecial" Margin="7" FontSize="20" CornerRadius="30" BorderColor="#5b00f7" Background="#0e2124" TextColor="#5b00f7" BorderWidth="5" Grid.Row="8" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" />
+
+    </Grid>
+
+
+
+
+
+</ContentPage>
